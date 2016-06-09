@@ -1,0 +1,15 @@
+public class GcdTest{
+	
+	public static int gcd(int p, int q)//greatest common divisor
+	{
+		if(q == 0) return p;
+		int r = p % q;
+		return gcd(q,r);
+	}
+	
+	public static void main(String[] args)
+	{
+		System.out.println(gcd(105,24));
+	}
+
+}
